@@ -37,7 +37,7 @@ head();
                                         </tr>
                                         <tr class="danger">
                                             <td>Inactive</td>
-                                            <td>19</td>
+                                            <td>17</td>
                                         </tr>
 
                                     </tbody>
