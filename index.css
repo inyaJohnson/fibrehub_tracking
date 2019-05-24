@@ -1,0 +1,209 @@
+/* .search-icon{
+    padding-bottom: 5px;
+}
+
+.searchform{
+    margin-top: 25px;
+} */
+
+
+.form-horizontal{
+    /* margin-top: 25px; */
+    margin-bottom: 100px;
+} 
+
+
+.search-icon{
+    margin: -5px;
+    border: none;
+}
+
+.search{
+    border: none;
+}
+.my-nav{
+    background-color: rgb(51, 122, 183);
+    margin: 0px;
+    /* min-height:20%; */
+
+}
+
+.icon-bar{
+    background-color:white;
+    
+}
+
+#header{
+    font-size: 30px;
+}
+
+.nav-font{
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.menu-font:hover{
+    color: rgb(51, 122, 183);
+    font-weight: bold;
+    margin: 5px 2px;
+}
+
+/* .navbar-nav > li > a:active{
+    background-color: red  !important;
+} */
+
+ .active{
+	text-decoration: underline;
+    color:white; 
+   
+} 
+
+/* STYLE FOR ADDER USERS FORM */
+.loginform-style{
+    margin: 10px 0px;
+}
+
+#loginform{
+    margin-top: 80px;
+}
+
+
+/* ...........FOOTER STYLE............ */
+/* the html, body and container-fluid helps to keep the footer @ the bottom */
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+ 
+ /* .container-fluid{
+     min-height:78%;
+     position:relative;
+ } */
+
+#footer{
+    background-color: rgb(51, 122, 183);
+    color: white;
+    padding: 20px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#copyright{
+    text-align: center;
+}
+
+/* .navbar-nav > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+} */
+
+/*.................... SIGNUP PAGE....................... */
+
+.rights{
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.error{
+    color: red;
+}
+
+/* signup div */
+.input-index{
+	z-index: 0;
+	margin: 10px;
+	line-height: 1.7;
+}
+
+#signup{
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.heading{
+	color:#FFF;
+	padding: 20px;
+}
+
+.panel-title{
+	font-size:20;
+	font-weight: bold;
+}
+ul li.active a{
+	background-color: rgb(51, 122, 183) !important;
+	color: #FFF !important;
+}
+
+/* .................................................... */
+
+/*............Confirm section(Account)................. */
+/* #confirm{
+    margin-left: 20px; 
+} */
+
+/* ..............STYLING THE MODAL...................... */
+.modal-header{
+    background-color: rgb(51, 122, 183) !important;
+}
+
+.modal-title{
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.close{
+    font-size: 30px !important;
+}
+
+#staff-name{
+    text-align: center;
+}
+
+/* ..........MODAL STYLE............. */
+.add-payment{
+    margin-bottom: 10px;
+}
+
+.fa-credit-card, .fa-edit{
+    font-size: 20px;
+    margin-right: 10px ;
+}
+
+.add-payment-form{
+    margin: 10px;
+    padding: 0px 20px;
+}
+
+.add-payment-form-input{
+    margin: 10px 0px;
+}
+
+/* .............datepicker............. */
+
+/* .............edit-form............... */
+.label-input{
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+#edit-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.bootbox-success{
+    color:green;
+    font: bold;
+}
+
+.bootbox-fail{
+    color:red;
+    font: bold;
+}

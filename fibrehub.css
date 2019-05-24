@@ -1,0 +1,43 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+.loginheader{
+    background-color: rgb(51, 122, 183);
+    color: white;
+    padding: 20px 0px;
+}
+
+#header{
+    font-size: 40px;
+    font-weight: bold;
+    /* color: red; */
+}
+
+.loginform-style{
+    margin: 10px 0px;
+}
+
+#loginform{
+    margin-top: 130px;
+}
+
+#footer{
+    background-color: rgb(51, 122, 183);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 0px;
+}
+
+#copyright{
+    text-align: center;
+}
+
+.error{
+    color: red;
+}
