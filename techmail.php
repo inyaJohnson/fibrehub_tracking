@@ -44,8 +44,8 @@ class Account{
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
         $headers .= 'From:' . $from;
-        if(mail($to, $subject, $message, $headers)){
-            $this->query->deleteProspect($id);
+        $delete = $this->query->deleteProspect($id);
+        if(mail($to, $subject, $message, $headers) && $delete){
                 $response = [
                     'status' => 1,
                     'message' => "<div class='text-success' style='font-weight: bold;' >Operation Successful</div>",
