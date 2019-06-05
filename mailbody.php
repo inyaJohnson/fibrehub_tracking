@@ -86,6 +86,6 @@ $html = <<<END
 
 END;
 
-echo $html;
+return $html;
 
 ?>

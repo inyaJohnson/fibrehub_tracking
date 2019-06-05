@@ -65,20 +65,35 @@ function prospect(){
             $(document).ready(function(){
                 $(".confirm_btn").click(function(){
                     var id = $(this).attr('data-id');
-                    // Ajax request
-                    $.ajax({
-                        type: 'POST',
-                        url: 'techmail.php',
-                        data: {id:id},
-                        success: function(response){
-                            if(response.status == 1){
-                                bootbox.alert(response.message);
-                            }else{
-                                bootbox.alert(response.message);
+                    var dialog = bootbox.dialog({
+                        title: 'Confirm Prospect',
+                        message: "<p>Are sure the prospect has paid?.</p>",
+                        size: 'medium',
+                        buttons: {
+                            cancel: {
+                                label: "No",
+                                className: 'btn-danger'
+                            },
+
+                            ok: {
+                                label: "Yes",
+                                className: 'btn-success',
+                                callback: function(){
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: 'techmail.php',
+                                        data: {id:id},
+                                        success: function(response){
+                                            bootbox.alert(response.message);
+                                        }
+                                    });
+                                }
                             }
                         }
-                    })
+                    });
+                    dialog();
                 });
+
             });
             </script>
         </body>

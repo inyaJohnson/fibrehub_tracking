@@ -58,7 +58,7 @@ head();
                 <div class="progress-bar progress-bar-success" role="progressbar"
                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                      style="width: 95%;">
-                    <span class="sr-only">95% Complete (Sucess)</span>
+                    <span class="sr-only">95% Complete (Success)</span>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@ head();
                 <div class="progress-bar progress-bar-success" role="progressbar"
                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                      style="width: 95%;">
-                    <span class="sr-only">95% Complete (Sucess)</span>
+                    <span class="sr-only">95% Complete (Success)</span>
                 </div>
             </div>
         </div>

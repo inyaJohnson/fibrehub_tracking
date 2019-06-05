@@ -4,7 +4,7 @@ if(isset($_POST)){
     $prospect = new Account();
     $info = $prospect->prospectInfo($_POST);
     // unset($info['organisation_name']);
-    $id = $info['prospect_id']; 
+    $id = $info['prospect_id'];
      
     ob_start();
     include "mailbody.php";
@@ -30,9 +30,8 @@ class Account{
     public function prospectInfo(array $data){
         $prospectID = $data['id'];
         $result = $this->query->techMail($prospectID);
-        // var_dump($result);
-        foreach($result as $paidProspect){ 
-            $id = $paidProspect['prospect_id']; 
+        foreach($result as $paidProspect){
+            return $paidProspect;
         }
     }
 
@@ -44,15 +43,14 @@ class Account{
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
         $headers .= 'From:' . $from;
-        $delete = $this->query->deleteProspect($id);
-        if(mail($to, $subject, $message, $headers) && $delete){
+        var_dump($html);
+        exit();
+        if(mail($to, $subject, $message, $headers) && $this->query->deleteProspect($id)){
                 $response = [
-                    'status' => 1,
                     'message' => "<div class='text-success' style='font-weight: bold;' >Operation Successful</div>",
                 ];
         }else{
                 $response = [
-                    'status' => 0,
                     'message' => "<div class='text-danger' style='font-weight: bold;' >Operation Failed</div>",
                 ];
         }
